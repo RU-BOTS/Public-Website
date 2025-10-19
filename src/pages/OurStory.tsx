@@ -1,0 +1,326 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { Users, Heart, Sparkles } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import heroImage from "@/assets/hero-robot.jpg";
+import communityImage from "@/assets/community-impact.jpg";
+import accomplishment1 from "@/assets/accomplishment-1.jpg";
+import accomplishment2 from "@/assets/accomplishment-2.jpg";
+import accomplishment3 from "@/assets/accomplishment-3.jpg";
+
+const OurStory = () => {
+  const donationGoal = 5000;
+  const raisedAmount = 3200; // placeholder dynamic
+  const raisedPct = Math.round((raisedAmount / donationGoal) * 100);
+  return (
+    <div className="min-h-screen py-20">
+      <div className="container max-w-6xl">
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-in">
+          <h1 className="text-5xl font-bold mb-6">Our Story</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            The journey of RU HART and our mission to combat food insecurity
+          </p>
+        </div>
+
+        {/* Founding Story */}
+        <section className="mb-20">
+          <Card className="shadow-medium">
+            <CardContent className="pt-10 pb-10">
+              <div className="prose prose-lg max-w-none">
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                It all started with a simple question: What if technology could make kindness move on wheels?
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                During their time at Rutgers, Dhruv and Advik noticed something that too often went unseen — students quietly struggling with food insecurity. 
+                Between classes, jobs, and commutes, many found it difficult to access the Rutgers Food Pantry during open hours, and even when they did, they often felt self-conscious about seeking help. 
+                The founders envisioned a way to bring the pantry to them — safely, reliably, and with discretion.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                From that spark, RU HART, Rutgers’ chapter of the Human Factors and Ergonomics Society (HFES), was born — a team of engineers, designers, and dreamers determined to use robotics for good. 
+                Together, they began building PantryBot, an autonomous delivery robot designed to carry pantry essentials directly to students across campus.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                What began as late-night brainstorming sessions soon became a mission: to prove that technology doesn’t just have to be smart — it can be compassionate.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Today, RU HART brings together students from various disciplines including engineering, business, law and software, united by a 
+                  common goal: to ensure that no student goes hungry and that everyone has equal access to food.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Board Hierarchy */}
+        <section>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 flex items-center justify-center gap-3">
+              <Users className="h-10 w-10 text-primary" />
+              Leadership Team
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Meet the dedicated team driving RU HART's mission forward
+            </p>
+          </div>
+
+          {/* Executive Board */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold mb-6 text-center">Executive Board</h3>
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-primary">DN</span>
+                  </div>
+                  <CardTitle className="text-xl">Dhruv Nagpal</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">President</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>Industrial Engineering, Class of 2028</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-primary">AL</span>
+                  </div>
+                  <CardTitle className="text-xl">Advik Lall</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Vice President</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>Computer Science Data Science, Class of 2027</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-primary">AS</span>
+                  </div>
+                  <CardTitle className="text-xl">Aryan Shankar</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Secretary</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>Computer Science, Class of 2026</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Team Leads */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold mb-6 text-center">Team Leads</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-20 h-20 rounded-full bg-blue-500 mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">IL</span>
+                  </div>
+                  <CardTitle className="text-lg">Illan Zarge</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Mechanical Lead</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>ME, Class of 2026</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-20 h-20 rounded-full bg-yellow-500 mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">RS</span>
+                  </div>
+                  <CardTitle className="text-lg">Rohan </CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>ECE, Class of 2026</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-20 h-20 rounded-full bg-purple-500 mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">G</span>
+                  </div>
+                  <CardTitle className="text-lg">Gavril</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>CS, Class of 2025</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-20 h-20 rounded-full bg-green-500 mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">SA</span>
+                  </div>
+                  <CardTitle className="text-lg">Shubham Agarwal</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Business Lead</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>ISE, Class of 2026</p>
+                </CardContent>
+              </Card>
+            </div>
+            {/* Second Team Leads */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-20 h-20 rounded-full bg-blue-500 mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">IL</span>
+                  </div>
+                  <CardTitle className="text-lg">Illan Zarge</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Mechanical Lead</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>ME, Class of 2026</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-20 h-20 rounded-full bg-yellow-500 mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">TZ</span>
+                  </div>
+                  <CardTitle className="text-lg">Taha Zaidi </CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>ECE, Class of 2026</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-20 h-20 rounded-full bg-purple-500 mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">A</span>
+                  </div>
+                  <CardTitle className="text-lg">Apollo</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>CS, Class of 2025</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-20 h-20 rounded-full bg-green-500 mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">AB</span>
+                  </div>
+                  <CardTitle className="text-lg">Aryan</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Outreach Lead</p>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <p>ISE, Class of 2026</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Team Progress - Slideshow */
+          }
+          <section className="mt-16">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold">Team Progress</h3>
+              <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+                A glimpse into our journey building PantryBot — prototyping, testing, and community outreach
+              </p>
+            </div>
+            <Card className="shadow-medium">
+              <CardContent className="pt-6 pb-8">
+                <Carousel className="relative">
+                  <CarouselContent>
+                    {[
+                      { src: heroImage, alt: "Robot hero shot", caption: "Early concept render of PantryBot" },
+                      { src: accomplishment1, alt: "Prototype build", caption: "First chassis prototype assembled" },
+                      { src: accomplishment2, alt: "Campus delivery test", caption: "Initial navigation tests on campus" },
+                      { src: accomplishment3, alt: "Community outreach event", caption: "Sharing our work with students" },
+                      { src: communityImage, alt: "Community impact", caption: "Partnering to improve food access" },
+                    ].map((item, index) => (
+                    <CarouselItem key={index} className="md:basis-3/4 lg:basis-2/3">
+                        <figure className="overflow-hidden rounded-xl shadow-medium bg-muted/10">
+                          <img
+                            src={item.src}
+                            alt={item.alt}
+                            className="w-full h-[360px] object-cover hover:scale-[1.02] transition-transform duration-500"
+                          />
+                        <figcaption className="text-sm font-semibold tracking-tight text-foreground p-3 text-center">
+                            {item.caption}
+                          </figcaption>
+                        </figure>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                <CarouselPrevious className="hidden md:flex h-12 w-12 scale-[1.1] transition duration-300 hover:scale-125 hover:ring-2 hover:ring-primary/60 hover:ring-offset-2 hover:ring-offset-background" />
+                <CarouselNext className="hidden md:flex h-12 w-12 scale-[1.1] transition duration-300 hover:scale-125 hover:ring-2 hover:ring-primary/60 hover:ring-offset-2 hover:ring-offset-background" />
+                </Carousel>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Support Our Mission - Distinct Donation CTAs */}
+          <section className="mt-16">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold">Support Our Mission</h3>
+              <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+                Your gift fuels engineering, outreach, and the delivery of dignity on campus
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              {/* 1) Gradient glow CTA banner */}
+              <Card className="relative shadow-large overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 blur-xl" />
+                <div className="absolute inset-0 rounded-xl pointer-events-none border border-primary/30" />
+                <CardContent className="relative z-10 p-8 text-center">
+                  <div className="text-2xl md:text-3xl font-bold mb-3">Help PantryBot reach more students</div>
+                  <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">Every contribution powers parts, testing, and safe delivery pilots</p>
+                  <Link to="/donate">
+                    <Button size="lg" className="px-8 text-lg shadow-md hover:shadow-primary/40">
+                      <Heart className="h-5 w-5 mr-2" /> Donate Now
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+
+              {/* 2a) Donation goal meter - energetic */}
+              <Card className="shadow-medium bg-gradient-to-br from-primary/15 via-primary/10 to-primary/5">
+                <CardContent className="p-6">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div>
+                      <div className="text-xl font-semibold">Donation Goal (Energetic)</div>
+                      <div className="text-sm text-muted-foreground">${raisedAmount.toLocaleString()} of ${donationGoal.toLocaleString()}</div>
+                    </div>
+                    <Link to="/donate">
+                      <Button className="group">
+                        <Sparkles className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
+                        Boost the Mission
+                      </Button>
+                    </Link>
+                  </div>
+                  <div className="mt-4 h-3 rounded-full bg-background overflow-hidden">
+                    <div className="h-full bg-primary relative" style={{ width: `${raisedPct}%` }}>
+                      <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent)] animate-[pulse_2s_ease_infinite]" />
+                    </div>
+                  </div>
+                  <div className="mt-2 text-xs text-muted-foreground">{raisedPct}% to $ {donationGoal.toLocaleString()}</div>
+                </CardContent>
+              </Card>
+              
+            </div>
+          </section>
+
+          {/* Organization Chart Visual */}
+  
+        </section>
+      </div>
+    </div>
+  );
+};
+
+export default OurStory;
