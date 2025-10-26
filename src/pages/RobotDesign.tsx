@@ -2,8 +2,38 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Box, RotateCcw, ZoomIn, Download, Info, Cpu, Wrench, Zap, Package } from "lucide-react";
+import { Canvas, useLoader, useFrame} from '@react-three/fiber'
+import { useGLTF, OrbitControls} from '@react-three/drei'
+import { STLLoader } from 'three-stdlib';
+import { MeshStandardMaterial } from 'three';
+
+import * as THREE from 'three';
+
+import { Mesh } from "three";
+
+
+
+
+
+
 
 const RobotDesign = () => {
+
+
+
+   const BotModel = ({ url }: { url: string }) => {
+    const { scene } = useGLTF(url);
+
+    scene.traverse((child) => {
+    if (child.isMesh && child) {
+      child.material.color.set('red') // or new THREE.Color('#ff0000')
+    }
+    })
+
+    return <primitive object={scene} scale={0.05} />;
+  };
+
+
   return (
     <div className="min-h-screen py-20">
       <div className="container">
@@ -34,6 +64,19 @@ const RobotDesign = () => {
                   <p className="text-lg font-semibold text-muted-foreground mb-2">
                     Dynamic 3D CAD Model Viewer
                   </p>
+                   <div className="canvas-container">
+              <Canvas 
+              camera={{ position: [0, 0, 5] }}
+              style={{width: '500px', height: '500px'}}>
+                <ambientLight intensity={3} />
+                <directionalLight position={[5, 5, 5]} intensity={3} />
+                <BotModel url="/3D_Images/bot3.gltf" />
+                <OrbitControls 
+
+                maxPolarAngle={Math.PI / 2}/>
+                
+              </Canvas>
+            </div>
                   <p className="text-sm text-muted-foreground max-w-md mx-auto mb-6">
                     Interactive 3D model built according to robot specifications. 
                     Will support rotation, zoom, and component highlighting.

@@ -123,7 +123,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Mechanical Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ME, Class of 2026</p>
+                  <p>ME, Class of 2028</p>
                 </CardContent>
               </Card>
 
@@ -136,7 +136,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ECE, Class of 2026</p>
+                  <p>ECE, Class of 2028</p>
                 </CardContent>
               </Card>
 
@@ -149,7 +149,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>CS, Class of 2025</p>
+                  <p>ECE, Class of 2028</p>
                 </CardContent>
               </Card>
 
@@ -190,7 +190,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ECE, Class of 2026</p>
+                  <p>ECE, Class of 2028</p>
                 </CardContent>
               </Card>
 
@@ -203,7 +203,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>CS, Class of 2025</p>
+                  <p>CS, Class of 2029</p>
                 </CardContent>
               </Card>
 
