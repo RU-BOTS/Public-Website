@@ -78,7 +78,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">President</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Industrial Engineering, Class of 2028</p>
+                  <p>Industrial and Systems Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
@@ -91,7 +91,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Vice President</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Computer Science Data Science, Class of 2027</p>
+                  <p>Computer Science and Data Science, Class of 2027</p>
                 </CardContent>
               </Card>
 
@@ -104,7 +104,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Secretary</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Computer Science, Class of 2026</p>
+                  <p>Computer Science, Class of 2028</p>
                 </CardContent>
               </Card>
             </div>
@@ -123,7 +123,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Mechanical Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ME, Class of 2026</p>
+                  <p>Industrial and Systems Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
@@ -132,24 +132,24 @@ const OurStory = () => {
                   <div className="w-20 h-20 rounded-full bg-yellow-500 mx-auto mb-4 flex items-center justify-center">
                     <span className="text-2xl font-bold text-white">RS</span>
                   </div>
-                  <CardTitle className="text-lg">Rohan </CardTitle>
+                  <CardTitle className="text-lg">Rohan Shrivastava</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ECE, Class of 2026</p>
+                  <p>Electrical Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
                   <div className="w-20 h-20 rounded-full bg-purple-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">G</span>
+                    <span className="text-2xl font-bold text-white">AT</span>
                   </div>
-                  <CardTitle className="text-lg">Gavril</CardTitle>
+                  <CardTitle className="text-lg">Apollo Touch</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>CS, Class of 2025</p>
+                  <p>Computer Science, Class of 2029</p>
                 </CardContent>
               </Card>
 
@@ -162,7 +162,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Business Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ISE, Class of 2026</p>
+                  <p>Finance, Class of 2026</p>
                 </CardContent>
               </Card>
             </div>
@@ -177,7 +177,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Mechanical Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ME, Class of 2026</p>
+                  <p>Industrial and Systems Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
@@ -190,33 +190,33 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ECE, Class of 2026</p>
+                  <p>Electrical Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
                   <div className="w-20 h-20 rounded-full bg-purple-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">A</span>
+                    <span className="text-2xl font-bold text-white">GL</span>
                   </div>
-                  <CardTitle className="text-lg">Apollo</CardTitle>
+                  <CardTitle className="text-lg">Gavril Lomotey</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>CS, Class of 2025</p>
+                  <p>Electrical Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
                   <div className="w-20 h-20 rounded-full bg-green-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">AB</span>
+                    <span className="text-2xl font-bold text-white">AO</span>
                   </div>
-                  <CardTitle className="text-lg">Aryan</CardTitle>
-                  <p className="text-sm text-muted-foreground font-medium">Outreach Lead</p>
+                  <CardTitle className="text-lg">Aryan Oza</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Business Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ISE, Class of 2026</p>
+                  <p>Finance, Class of 2028</p>
                 </CardContent>
               </Card>
             </div>
