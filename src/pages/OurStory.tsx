@@ -11,7 +11,7 @@ import accomplishment3 from "@/assets/accomplishment-3.jpg";
 
 const OurStory = () => {
   const donationGoal = 5000;
-  const raisedAmount = 3200; // placeholder dynamic
+  const raisedAmount = 5; // current amount raised
   const raisedPct = Math.round((raisedAmount / donationGoal) * 100);
   return (
     <div className="min-h-screen py-20">
@@ -171,10 +171,10 @@ const OurStory = () => {
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
                   <div className="w-20 h-20 rounded-full bg-blue-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">IL</span>
+                    <span className="text-2xl font-bold text-white">BF</span>
                   </div>
-                  <CardTitle className="text-lg">Illan Zarge</CardTitle>
-                  <p className="text-sm text-muted-foreground font-medium">Mechanical Lead</p>
+                  <CardTitle className="text-lg">Bridget Filan</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Electrical Advisor</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
                   <p>Industrial and Systems Engineering, Class of 2028</p>
