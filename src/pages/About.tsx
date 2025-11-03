@@ -23,7 +23,7 @@ function useAnimatedNumber(target: number, duration = 1000) {
 
 function ImpactPanel() {
   // Placeholder dynamic data
-  const acceptancePct = 70;
+  const acceptancePct = 71;
   const discretionLiftPct = 72;
   const weeklyPct = 68;
   const biWeeklyPct = 25;

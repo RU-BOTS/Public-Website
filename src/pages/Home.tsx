@@ -52,25 +52,25 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[DATA]</div>
+                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
                 <p className="text-muted-foreground">Students Affected</p>
               </CardContent>
             </Card>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[DATA]</div>
+                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
                 <p className="text-muted-foreground">Deliveries Made</p>
               </CardContent>
             </Card>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[DATA]</div>
+                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
                 <p className="text-muted-foreground">Hours Saved</p>
               </CardContent>
             </Card>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[DATA]</div>
+                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
                 <p className="text-muted-foreground">Partner Organizations</p>
               </CardContent>
             </Card>
