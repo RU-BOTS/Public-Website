@@ -12,7 +12,7 @@ const Donate = () => {
 
   // Placeholder values - will be synced with GoFundMe
   const goalAmount = 50000;
-  const currentAmount = 12750;
+  const currentAmount = 5;
   const progressPercentage = (currentAmount / goalAmount) * 100;
 
   const donationTiers = [
