@@ -52,25 +52,25 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[DATA]</div>
+                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
                 <p className="text-muted-foreground">Students Affected</p>
               </CardContent>
             </Card>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[DATA]</div>
+                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
                 <p className="text-muted-foreground">Deliveries Made</p>
               </CardContent>
             </Card>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[DATA]</div>
+                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
                 <p className="text-muted-foreground">Hours Saved</p>
               </CardContent>
             </Card>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[DATA]</div>
+                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
                 <p className="text-muted-foreground">Partner Organizations</p>
               </CardContent>
             </Card>
@@ -203,15 +203,13 @@ const Home = () => {
                 />
               </div>
               <CardContent className="pt-6">
-                <h3 className="text-2xl font-bold mb-3 text-primary">Prototype Development</h3>
+                <h3 className="text-2xl font-bold mb-3 text-primary">Market Research</h3>
                 <p className="text-muted-foreground mb-4">
-                  [YEAR] - Our dedicated team of engineers and volunteers successfully 
-                  developed and tested our first autonomous delivery robot prototype, 
-                  marking a major milestone in our mission.
+                  [2025 Summer] Identified business potential and conducted market research to develop a product that meets the needs of the Rutgers community. Chartered with HFES and ISE to get access to development resources and support.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <div className="h-1 w-12 bg-primary rounded"></div>
-                  <span>[XX] hours of development</span>
+                  <span>[156] Pantry users surveyed</span>
                 </div>
               </CardContent>
             </Card>
@@ -225,15 +223,15 @@ const Home = () => {
                 />
               </div>
               <CardContent className="pt-6">
-                <h3 className="text-2xl font-bold mb-3 text-primary">Campus Trials</h3>
+                <h3 className="text-2xl font-bold mb-3 text-primary">Prototype Development</h3>
                 <p className="text-muted-foreground mb-4">
-                  [YEAR] - Completed [XX] successful test deliveries across campus, 
-                  demonstrating the viability of our autonomous system and gathering 
-                  valuable feedback from the community.
+                  [2025 Fall] - Our dedicated team of engineers and volunteers successfully 
+                  developed and tested our first autonomous delivery robot prototype with a drivetrain, 
+                  marking a major milestone in our mission.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <div className="h-1 w-12 bg-primary rounded"></div>
-                  <span>[XX] test deliveries completed</span>
+                  <span>[100+] hours of development</span>
                 </div>
               </CardContent>
             </Card>
@@ -249,13 +247,13 @@ const Home = () => {
               <CardContent className="pt-6">
                 <h3 className="text-2xl font-bold mb-3 text-primary">Community Engagement</h3>
                 <p className="text-muted-foreground mb-4">
-                  [YEAR] - Hosted [XX] workshops and outreach events, educating 
-                  [XXX] students about food insecurity and recruiting passionate 
-                  volunteers to join our cause.
+                  [2025 Fall] - Hosted 10+ workshops and across mechanical, business,electrical and software subteams, educating members on specialized robotics topics. Presented our work at the Rutgers Engineering Expo (ID3A)
+                  
+        
                 </p>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <div className="h-1 w-12 bg-primary rounded"></div>
-                  <span>[XX] events organized</span>
+                  <span> [80+] Rutgers students actively volunteer</span>
                 </div>
               </CardContent>
             </Card>
