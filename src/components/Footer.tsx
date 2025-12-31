@@ -45,7 +45,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                <span>info@ruhart.org</span>
+                <span>rutgershart@gmail.com</span>
               </li>
             </ul>
           </div>
