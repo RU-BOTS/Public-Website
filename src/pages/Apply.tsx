@@ -13,7 +13,7 @@ const Apply = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-5xl font-bold mb-6">Join RU HART</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Be part of something meaningful. Apply to join our team or run for 
+            Be part of something meaningful. Join our team or run for 
             an executive board position.
           </p>
         </div>
@@ -92,55 +92,7 @@ const Apply = () => {
         {/* Application Form Placeholders */}
         <div className="space-y-8">
           {/* Club Application */}
-          <Card className="shadow-medium">
-            <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-2">
-                <FileText className="h-6 w-6 text-primary" />
-                Club Member Application
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="bg-muted/50 rounded-lg p-8 border-2 border-dashed border-border text-center">
-                <Users className="h-16 w-16 mx-auto mb-4 text-muted-foreground" />
-                <p className="font-semibold text-muted-foreground mb-2">
-                  [Club Application Form Integration]
-                </p>
-                <p className="text-sm text-muted-foreground mb-6">
-                  Google Form or embedded application form to be added
-                </p>
-                <Button variant="default" disabled>
-                  Application Form Coming Soon
-                </Button>
-              </div>
-
-              {/* Preview of form fields */}
-              <div className="mt-8 pt-8 border-t border-border">
-                <h3 className="font-semibold mb-4">Expected Application Fields:</h3>
-                <div className="space-y-4 opacity-50">
-                  <div>
-                    <Label>Full Name</Label>
-                    <Input placeholder="Your name" disabled />
-                  </div>
-                  <div>
-                    <Label>Email Address</Label>
-                    <Input type="email" placeholder="your.email@rutgers.edu" disabled />
-                  </div>
-                  <div>
-                    <Label>Major / Year</Label>
-                    <Input placeholder="e.g., Computer Science, Sophomore" disabled />
-                  </div>
-                  <div>
-                    <Label>Preferred Subteam(s)</Label>
-                    <Input placeholder="Mechanical, Electrical, Software, etc." disabled />
-                  </div>
-                  <div>
-                    <Label>Why do you want to join RU HART?</Label>
-                    <Textarea placeholder="Tell us about your interests..." disabled />
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          
 
           {/* E-Board Application */}
           <Card className="shadow-medium">

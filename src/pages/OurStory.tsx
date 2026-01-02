@@ -8,10 +8,18 @@ import communityImage from "@/assets/community-impact.jpg";
 import accomplishment1 from "@/assets/accomplishment-1.jpg";
 import accomplishment2 from "@/assets/accomplishment-2.jpg";
 import accomplishment3 from "@/assets/accomplishment-3.jpg";
-
+import dhruv_img from "@/assets/dhruv_image.png";
+import apollo_img from "@/assets/apollo_image.png";
+import advik_img from "@/assets/advik_image.png";
+import kajol_img from "@/assets/kajol_image.png";
+import rohan_img from "@/assets/rohan_image.png";
+import bridget_img from "@/assets/bridget_image.png";
+import shubham_img from "@/assets/shubham_image.png";
+import ilan_img from "@/assets/ilan_image.png";
+import gav_img from "@/assets/gavril_image.png";
 const OurStory = () => {
   const donationGoal = 5000;
-  const raisedAmount = 3200; // placeholder dynamic
+  const raisedAmount = 5; // current amount raised
   const raisedPct = Math.round((raisedAmount / donationGoal) * 100);
   return (
     <div className="min-h-screen py-20">
@@ -72,39 +80,54 @@ const OurStory = () => {
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
                   <div className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-primary">DN</span>
+                    <img 
+                    
+                  src={dhruv_img} 
+                 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
                   </div>
                   <CardTitle className="text-xl">Dhruv Nagpal</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">President</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Industrial Engineering, Class of 2028</p>
+                  <p>Industrial and Systems Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
                   <div className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-primary">AL</span>
+                    <img 
+                    
+                  src={advik_img} 
+                  alt="Community outreach event" 
+                  className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
                   </div>
                   <CardTitle className="text-xl">Advik Lall</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Vice President</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Computer Science Data Science, Class of 2027</p>
+                  <p>Computer Science and Data Science, Class of 2027</p>
                 </CardContent>
               </Card>
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
                   <div className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-primary">AS</span>
+                    <img 
+                    
+                  src={kajol_img} 
+                  alt="Community outreach event" 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
                   </div>
-                  <CardTitle className="text-xl">Aryan Shankar</CardTitle>
+                  <CardTitle className="text-xl">Kajol LastName</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Secretary</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Computer Science, Class of 2026</p>
+                  <p>Computer Science, Class of 2028</p>
                 </CardContent>
               </Card>
             </div>
@@ -116,53 +139,73 @@ const OurStory = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
-                  <div className="w-20 h-20 rounded-full bg-blue-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">IL</span>
+                  <div className="">
+                    <img 
+                    
+                  src={ilan_img} 
+                  alt="Community outreach event" 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
                   </div>
                   <CardTitle className="text-lg">Illan Zarge</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Mechanical Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ME, Class of 2028</p>
+                  <p>Industrial and Systems Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
-                  <div className="w-20 h-20 rounded-full bg-yellow-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">RS</span>
+                  <div className="">
+                    <img 
+                    
+                  src={rohan_img} 
+                  alt="Community outreach event" 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
                   </div>
-                  <CardTitle className="text-lg">Rohan </CardTitle>
+                  <CardTitle className="text-lg">Rohan Shrivastava</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ECE, Class of 2028</p>
+                  <p>Electrical Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
-                  <div className="w-20 h-20 rounded-full bg-purple-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">G</span>
+                  <div className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center">
+                    <img 
+                    
+                  src={apollo_img} 
+                  alt="Community outreach event" 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
                   </div>
-                  <CardTitle className="text-lg">Gavril</CardTitle>
+                  <CardTitle className="text-lg">Apollo Touch</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ECE, Class of 2028</p>
+                  <p>Computer Science, Class of 2029</p>
                 </CardContent>
               </Card>
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
-                  <div className="w-20 h-20 rounded-full bg-green-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">SA</span>
+                  <div className="">
+                    <img 
+                    
+                  src={shubham_img} 
+                  alt="Community outreach event" 
+                  className="= object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
                   </div>
                   <CardTitle className="text-lg">Shubham Agarwal</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Business Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ISE, Class of 2026</p>
+                  <p>Finance, Class of 2026</p>
                 </CardContent>
               </Card>
             </div>
@@ -170,14 +213,19 @@ const OurStory = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
-                  <div className="w-20 h-20 rounded-full bg-blue-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">IL</span>
+                  <div className="">
+                    <img 
+                    
+                  src={bridget_img} 
+                  alt="Community outreach event" 
+                  className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
                   </div>
-                  <CardTitle className="text-lg">Illan Zarge</CardTitle>
-                  <p className="text-sm text-muted-foreground font-medium">Mechanical Lead</p>
+                  <CardTitle className="text-lg">Bridget Filan</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Marketing Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ME, Class of 2026</p>
+                  <p>Industrial and Systems Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
@@ -190,35 +238,29 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ECE, Class of 2028</p>
+                  <p>Electrical Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
-                  <div className="w-20 h-20 rounded-full bg-purple-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">A</span>
+                  <div className="">
+                    <img 
+                    
+                  src={gav_img} 
+                  alt="Community outreach event" 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
                   </div>
-                  <CardTitle className="text-lg">Apollo</CardTitle>
+                  <CardTitle className="text-lg">Gavril Lomotey</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>CS, Class of 2029</p>
+                  <p>Electrical Engineering, Class of 2028</p>
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft hover:shadow-medium transition-shadow">
-                <CardHeader className="text-center pb-4">
-                  <div className="w-20 h-20 rounded-full bg-green-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">AB</span>
-                  </div>
-                  <CardTitle className="text-lg">Aryan</CardTitle>
-                  <p className="text-sm text-muted-foreground font-medium">Outreach Lead</p>
-                </CardHeader>
-                <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>ISE, Class of 2026</p>
-                </CardContent>
-              </Card>
+             
             </div>
           </div>
 

@@ -7,6 +7,11 @@ import communityImage from "@/assets/community-impact.jpg";
 import accomplishment1 from "@/assets/accomplishment-1.jpg";
 import accomplishment2 from "@/assets/accomplishment-2.jpg";
 import accomplishment3 from "@/assets/accomplishment-3.jpg";
+import pizzaImg from "@/assets/pizza_img.png";
+import presentation_img from "@/assets/presentation_img.png";
+import pd_img from "@/assets/prototypeDev_img.png";
+import cm_img from "@/assets/community_img.png";
+import me_img from "@/assets/mechE_img.png";
 
 const Home = () => {
   return (
@@ -16,7 +21,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `linear-gradient(135deg, rgba(16, 90, 58, 0.9) 0%, rgba(16, 100, 68, 0.85) 100%), url(${heroImage})`,
+            backgroundImage: `linear-gradient(135deg, rgba(16, 90, 58, 0.9) 0%, rgba(16, 100, 68, 0.85) 100%), url(${presentation_img})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -99,7 +104,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img 
-                src={communityImage} 
+                src={pizzaImg} 
                 alt="Community Impact" 
                 className="rounded-lg shadow-medium"
               />
@@ -197,7 +202,7 @@ const Home = () => {
             <Card className="overflow-hidden shadow-medium hover:shadow-large transition-all">
               <div className="aspect-video relative overflow-hidden">
                 <img 
-                  src={accomplishment1} 
+                  src={me_img} 
                   alt="Team building robot prototype" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -217,7 +222,7 @@ const Home = () => {
             <Card className="overflow-hidden shadow-medium hover:shadow-large transition-all">
               <div className="aspect-video relative overflow-hidden">
                 <img 
-                  src={accomplishment2} 
+                  src={pd_img} 
                   alt="Robot making campus delivery" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -239,7 +244,7 @@ const Home = () => {
             <Card className="overflow-hidden shadow-medium hover:shadow-large transition-all">
               <div className="aspect-video relative overflow-hidden">
                 <img 
-                  src={accomplishment3} 
+                  src={cm_img} 
                   alt="Community outreach event" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
