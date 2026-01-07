@@ -21,7 +21,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `linear-gradient(135deg, rgba(16, 90, 58, 0.9) 0%, rgba(16, 100, 68, 0.85) 100%), url(${presentation_img})`,
+            backgroundImage: `linear-gradient(135deg, rgba(90, 21, 16, 0.9) 0%, rgba(16, 100, 68, 0.85) 100%), url(${presentation_img})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

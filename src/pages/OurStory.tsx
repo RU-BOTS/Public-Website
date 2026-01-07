@@ -126,7 +126,7 @@ const OurStory = () => {
                   className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
                 />
                   </div>
-                  <CardTitle className="text-xl">Kajol LastName</CardTitle>
+                  <CardTitle className="text-xl">Kajol Parikh</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Secretary</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">

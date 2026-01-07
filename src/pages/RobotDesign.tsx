@@ -79,8 +79,7 @@ const RobotDesign = () => {
               </Canvas>
             </div>
                   <p className="text-sm text-muted-foreground max-w-md mx-auto mb-6">
-                    Interactive 3D model built according to robot specifications. 
-                    Will support rotation, zoom, and component highlighting.
+                    Interactive 3D model 
                   </p>
                   <div className="flex gap-2 justify-center flex-wrap">
                     <Button variant="outline" size="sm" disabled>
