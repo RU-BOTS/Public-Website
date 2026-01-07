@@ -5,6 +5,10 @@ import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import { Heart, Award, Star, Trophy } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+
+import team_img from "@/assets/team_pic.png";
+
 //import GoFundMe from "../hooks/goFundMe";
 const Donate = () => {
   const [customAmount, setCustomAmount] = useState("");
@@ -12,7 +16,7 @@ const Donate = () => {
 
   // Placeholder values - will be synced with GoFundMe
   const goalAmount = 50000;
-  const currentAmount = 10000;
+  const currentAmount = 5;
   const progressPercentage = (currentAmount / goalAmount) * 100;
 
   const donationTiers = [
@@ -34,7 +38,7 @@ const Donate = () => {
           <h1 className="text-5xl font-bold mb-6">Support RU HART</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Your donation directly funds the development of life-changing technology 
-            for students facing food insecurity
+            for students facing food insecurity. 
           </p>
         </div>
         
@@ -59,9 +63,9 @@ const Donate = () => {
                 </div>
               </div>
               <Progress value={progressPercentage} className="h-4" />
-              <p className="text-sm text-muted-foreground text-center">
+              {/*<p className="text-sm text-muted-foreground text-center">
                 Progress bar synced with GoFundMe campaign
-              </p>
+              </p> */}
             </div>
           </CardContent>
         </Card>
@@ -72,8 +76,13 @@ const Donate = () => {
             <Card className="shadow-medium">
               <CardHeader>
                 <CardTitle className="text-2xl">Make Your Donation</CardTitle>
+                <div>As a close-knit community of passionate, aspiring engineers, we invite you to become part of our family.
+
+ </div>
               </CardHeader>
               <CardContent className="space-y-6">
+
+        
                 
                
                 {/*  // Quick Select Amounts 
@@ -132,6 +141,8 @@ const Donate = () => {
                   </div>
                 </div>
                 */}
+                
+
 
                 
                 {/*// Payment Integration Placeholder */}
@@ -153,6 +164,8 @@ const Donate = () => {
               </CardContent>
             </Card>
           </div>
+          
+          
 
           {/* Donation Benefits */}
           <div className="space-y-6">
@@ -211,6 +224,36 @@ const Donate = () => {
             </Card>
           </div>
         </div>
+
+        {/*  design pic stuff  */}
+                      <Card className="shadow-medium  w-[620px] -mt-64 md:-mt-50">
+                                    <CardContent className="pt-6 pb-8">
+                                      <Carousel className="relative">
+                                        <CarouselContent>
+                                          {[
+                                            { src:team_img, alt: "Motor Driver Circuit", caption: "" },
+                                            
+                                           
+                                          ].map((item, index) => (
+                                          <CarouselItem key={index} className="md:basis-3/4 lg:basis-2/3">
+                                              <figure className="overflow-hidden rounded-xl shadow-medium bg-muted/10">
+                                                <img 
+                                                  src={item.src}
+                                                  alt={item.alt}
+                                                  className="object-over w-full h-[360px] object-cover hover:scale-[1.02] transition-transform duration-500"
+                                                />
+                                              <figcaption className="text-sm font-semibold tracking-tight text-foreground p-3 text-center">
+                                                  {item.caption}
+                                                </figcaption>
+                                              </figure>
+                                            </CarouselItem>
+                                          ))}
+                                        </CarouselContent>
+                                      <CarouselPrevious className="hidden md:flex h-12 w-12 scale-[1.1] transition duration-300 hover:scale-125 hover:ring-2 hover:ring-primary/60 hover:ring-offset-2 hover:ring-offset-background" />
+                                      <CarouselNext className="hidden md:flex h-12 w-12 scale-[1.1] transition duration-300 hover:scale-125 hover:ring-2 hover:ring-primary/60 hover:ring-offset-2 hover:ring-offset-background" />
+                                      </Carousel>
+                                    </CardContent>
+                                  </Card>
 
         {/* Tax Information */}
         <Card className="shadow-soft">
