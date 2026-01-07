@@ -9,7 +9,7 @@ const Events = () => {
       <div className="container">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl font-bold mb-6">Events & Raffles</h1>
+          <h1 className="text-5xl font-bold mb-6">Events</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Join us for exciting fundraising events and enter to win amazing prizes 
             while supporting our mission
@@ -38,7 +38,7 @@ const Events = () => {
           </Card>
         </section>
 
-        {/* Active Raffles */}
+        {/* Active Raffles 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8">Active Raffles & Incentives</h2>
           <Card className="shadow-medium bg-gradient-warm border-0">
@@ -78,6 +78,7 @@ const Events = () => {
             </CardContent>
           </Card>
         </section>
+        */}
 
         {/* Prize Tiers */}
         <section className="mb-16">
@@ -121,7 +122,7 @@ const Events = () => {
           </div>
         </section>
 
-        {/* Event Calendar Download */}
+        {/* Event Calendar Download 
         <section className="mb-16">
           <Card className="shadow-medium">
             <CardHeader>
@@ -151,6 +152,7 @@ const Events = () => {
             </CardContent>
           </Card>
         </section>
+        */}
 
         {/* CTA */}
         <Card className="shadow-medium bg-gradient-hero border-0">
@@ -160,9 +162,11 @@ const Events = () => {
               Follow us on social media and check back regularly for event updates, 
               raffle announcements, and more ways to support RU HART.
             </p>
+            <a href="https://www.instagram.com/rutgers_hart/?hl=en">
             <Button variant="accent" size="lg">
-              Stay Updated - Social Links Coming Soon
+              Stay Updated - Instagram Link
             </Button>
+            </a>
           </CardContent>
         </Card>
       </div>

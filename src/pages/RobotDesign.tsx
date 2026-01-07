@@ -6,13 +6,14 @@ import { Canvas, useLoader, useFrame} from '@react-three/fiber'
 import { useGLTF, OrbitControls} from '@react-three/drei'
 import { STLLoader } from 'three-stdlib';
 import { MeshStandardMaterial } from 'three';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 import * as THREE from 'three';
 
 import { Mesh } from "three";
 
 
-
+import mdriver_img from "@/assets/motorD_circuit.jpg";
 
 
 
@@ -54,7 +55,7 @@ const RobotDesign = () => {
                   <Box className="h-6 w-6 text-primary" />
                   Interactive 3D CAD Model
                 </CardTitle>
-                <Badge>Coming Soon</Badge>
+         
               </div>
             </CardHeader>
             <CardContent className="p-0">
@@ -130,6 +131,37 @@ const RobotDesign = () => {
                 </ul>
               </CardContent>
             </Card>
+
+            {/*  design pic stuff  */}
+            <Card className="shadow-medium">
+                          <CardContent className="pt-6 pb-8">
+                            <Carousel className="relative">
+                              <CarouselContent>
+                                {[
+                                  { src:mdriver_img, alt: "Motor Driver Circuit", caption: "Motor Driver Circuit" },
+                                  
+                                  //{ src: accomplishment3, alt: "Community outreach event", caption: "Sharing our work with students" },
+                                  //{ src: communityImage, alt: "Community impact", caption: "Partnering to improve food access" },
+                                ].map((item, index) => (
+                                <CarouselItem key={index} className="md:basis-3/4 lg:basis-2/3">
+                                    <figure className="overflow-hidden rounded-xl shadow-medium bg-muted/10">
+                                      <img
+                                        src={item.src}
+                                        alt={item.alt}
+                                        className="w-full h-[360px] object-cover hover:scale-[1.02] transition-transform duration-500"
+                                      />
+                                    <figcaption className="text-sm font-semibold tracking-tight text-foreground p-3 text-center">
+                                        {item.caption}
+                                      </figcaption>
+                                    </figure>
+                                  </CarouselItem>
+                                ))}
+                              </CarouselContent>
+                            <CarouselPrevious className="hidden md:flex h-12 w-12 scale-[1.1] transition duration-300 hover:scale-125 hover:ring-2 hover:ring-primary/60 hover:ring-offset-2 hover:ring-offset-background" />
+                            <CarouselNext className="hidden md:flex h-12 w-12 scale-[1.1] transition duration-300 hover:scale-125 hover:ring-2 hover:ring-primary/60 hover:ring-offset-2 hover:ring-offset-background" />
+                            </Carousel>
+                          </CardContent>
+                        </Card>
 
             <Card className="shadow-soft">
               <CardHeader>
@@ -261,14 +293,14 @@ const RobotDesign = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Complete Parts List</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Based on RU Bots Electrical and Mechanical Parts Lists, finalized according to our selected chassis and drivetrain specifications.
+              Based on RU HART Electrical and Mechanical Parts Lists, finalized according to our selected chassis and drivetrain specifications.
             </p>
           </div>
 
           <Card className="mb-12 shadow-medium bg-gradient-warm border-0">
             <CardContent className="pt-8 pb-8">
               <p className="text-center text-muted-foreground max-w-2xl mx-auto">
-                Our parts list is based on the RU Bots Electrical and Mechanical Parts Lists, 
+                Our parts list is based on the RU HART Electrical and Mechanical Parts Lists, 
                 finalized according to our selected chassis and drivetrain specifications.
               </p>
             </CardContent>
@@ -303,23 +335,21 @@ const RobotDesign = () => {
                   <div className="mt-4 text-sm text-left max-w-md mx-auto space-y-1">
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• Frame components</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">IXGNIJ 4PCS T Slot 4040 Aluminum Extrusion</Badge>
                     </div>
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• Wheel assemblies</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">L-faster 6X2 Inflation Tire Wheel</Badge>
                     </div>
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• Drive motors</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline"> Metal Gearmotor 37Dx52L mm 12V (Helical Pinion)</Badge>
                     </div>
-                    <div className="flex justify-between py-1">
-                      <span className="text-muted-foreground">• Payload container</span>
-                      <Badge variant="outline">TBD</Badge>
-                    </div>
+                   
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• Fasteners & hardware</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">4040 Corner Bracket Joint</Badge>
+                      <Badge variant="outline">Pololu Aluminum Scooter Wheel Adapter</Badge>
                     </div>
                   </div>
                 </div>
@@ -348,28 +378,28 @@ const RobotDesign = () => {
                     [Electrical Parts List]
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    Based on RU Bots Electrical Parts List standards
+                    Based on RU HART Electrical Parts List standards
                   </p>
                   <div className="mt-4 text-sm text-left max-w-md mx-auto space-y-1">
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• Battery system</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">MIGHTY MAX 12-Volt 100Ah SLA Battery</Badge>
                     </div>
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• Motor controllers</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">BTS7960 43A High Power Motor Driver</Badge>
                     </div>
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• Power distribution</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">Custom Made Power Distribution Board</Badge>
                     </div>
                     <div className="flex justify-between py-1">
-                      <span className="text-muted-foreground">• Wiring harnesses</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <span className="text-muted-foreground">• Voltage Converter</span>
+                      <Badge variant="outline"> XL6009 Buck Boost Power Module </Badge>
                     </div>
                     <div className="flex justify-between py-1">
-                      <span className="text-muted-foreground">• Circuit protection</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <span className="text-muted-foreground">• Microcontrollers</span>
+                      <Badge variant="outline"> CP2102 ESP-32</Badge>
                     </div>
                   </div>
                 </div>
@@ -403,23 +433,23 @@ const RobotDesign = () => {
                   <div className="mt-4 text-sm text-left max-w-md mx-auto space-y-1">
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• Main computer</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">Orange Pi 5 16GB Rockchip RK3588S</Badge>
                     </div>
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• LIDAR sensors</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">YouYeeToo LD20 Lidar</Badge>
                     </div>
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• Camera modules</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">Intel RealSense D435i</Badge>
                     </div>
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• GPS module</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">Tracfone Motorola Moto g Play 2024</Badge>
                     </div>
                     <div className="flex justify-between py-1">
                       <span className="text-muted-foreground">• IMU sensors</span>
-                      <Badge variant="outline">TBD</Badge>
+                      <Badge variant="outline">BNO085 Adafruit 9-DOF Orientation IMU</Badge>
                     </div>
                   </div>
                 </div>
@@ -442,13 +472,16 @@ const RobotDesign = () => {
                 part numbers, supplier information, and technical drawings.
               </p>
               <div className="flex justify-center gap-4 flex-wrap">
-                <Button variant="outline" size="lg" className="bg-background/10 hover:bg-background/20" disabled>
+                <a href="/3D_Images/RU HART PantryBot v3.stl" download="Robot File" className="download-btn">
+                <Button variant="outline" size="lg" className="bg-background/10 hover:bg-background/20" >
                   <Download className="mr-2 h-4 w-4" />
-                  Download CAD Files (Coming Soon)
+                  Download CAD Files 
                 </Button>
-                <Button variant="outline" size="lg" className="bg-background/10 hover:bg-background/20" disabled>
+                </a>
+
+                <Button variant="outline" size="lg" className="bg-background/10 hover:bg-background/20" >
                   <Download className="mr-2 h-4 w-4" />
-                  Download Parts List (Coming Soon)
+                  Download Parts List 
                 </Button>
               </div>
             </CardContent>
