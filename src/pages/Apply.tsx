@@ -111,9 +111,11 @@ const Apply = () => {
                 <p className="text-sm text-muted-foreground mb-6">
                   Leadership position application form to be added
                 </p>
-                <Button variant="outline" disabled>
-                  E-Board Application Coming Soon
+                <a href = "https://www.youtube.com/watch?v=YiqIkSHSmyc&list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k&index=3">
+                <Button variant="outline">
+                  E-Board Application Form
                 </Button>
+                </a>
               </div>
 
               {/* Preview of form fields */}

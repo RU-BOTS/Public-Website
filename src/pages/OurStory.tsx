@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Users, Heart, Sparkles } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import heroImage from "@/assets/hero-robot.jpg";
+import workshop_image from "@/assets/workshop.png";
+import pres_img from "@/assets/presentation_img.png";
 import communityImage from "@/assets/community-impact.jpg";
 import accomplishment1 from "@/assets/accomplishment-1.jpg";
 import accomplishment2 from "@/assets/accomplishment-2.jpg";
@@ -17,6 +18,8 @@ import bridget_img from "@/assets/bridget_image.png";
 import shubham_img from "@/assets/shubham_image.png";
 import ilan_img from "@/assets/ilan_image.png";
 import gav_img from "@/assets/gavril_image.png";
+import proto_img from "@/assets/prototypeDev_img.png";
+
 const OurStory = () => {
   const donationGoal = 5000;
   const raisedAmount = 5; // current amount raised
@@ -127,7 +130,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Secretary</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Computer Science, Class of 2028</p>
+                  <p>Computer Science and Data Science, Class of 2028</p>
                 </CardContent>
               </Card>
             </div>
@@ -205,7 +208,7 @@ const OurStory = () => {
                   <p className="text-sm text-muted-foreground font-medium">Business Lead</p>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Finance, Class of 2026</p>
+                  <p>Aerospace Engineering, Class of 2029</p>
                 </CardContent>
               </Card>
             </div>
@@ -278,11 +281,11 @@ const OurStory = () => {
                 <Carousel className="relative">
                   <CarouselContent>
                     {[
-                      { src: heroImage, alt: "Robot hero shot", caption: "Early concept render of PantryBot" },
-                      { src: accomplishment1, alt: "Prototype build", caption: "First chassis prototype assembled" },
-                      { src: accomplishment2, alt: "Campus delivery test", caption: "Initial navigation tests on campus" },
-                      { src: accomplishment3, alt: "Community outreach event", caption: "Sharing our work with students" },
-                      { src: communityImage, alt: "Community impact", caption: "Partnering to improve food access" },
+                      { src: workshop_image, alt: "Robot hero shot", caption: "Workshops for training members" },
+                      { src: pres_img, alt: "Prototype build", caption: "Engaging students in our project" },
+                      { src: proto_img, alt: "Campus delivery test", caption: "Construction of our prototype" },
+                      //{ src: accomplishment3, alt: "Community outreach event", caption: "Sharing our work with students" },
+                      //{ src: communityImage, alt: "Community impact", caption: "Partnering to improve food access" },
                     ].map((item, index) => (
                     <CarouselItem key={index} className="md:basis-3/4 lg:basis-2/3">
                         <figure className="overflow-hidden rounded-xl shadow-medium bg-muted/10">

@@ -4,15 +4,15 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import { Heart, Award, Star, Trophy } from "lucide-react";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+//import GoFundMe from "../hooks/goFundMe";
 const Donate = () => {
   const [customAmount, setCustomAmount] = useState("");
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
 
   // Placeholder values - will be synced with GoFundMe
   const goalAmount = 50000;
-  const currentAmount = 5;
+  const currentAmount = 10000;
   const progressPercentage = (currentAmount / goalAmount) * 100;
 
   const donationTiers = [
@@ -21,6 +21,10 @@ const Donate = () => {
     { amount: 100, label: "Champion", icon: Award },
     { amount: 250, label: "Hero", icon: Trophy },
   ];
+
+
+
+
 
   return (
     <div className="min-h-screen py-20">
@@ -33,13 +37,18 @@ const Donate = () => {
             for students facing food insecurity
           </p>
         </div>
-
+        
         {/* Progress Section */}
         <Card className="mb-12 shadow-medium">
           <CardContent className="pt-8">
             <div className="space-y-4">
               <div className="flex justify-between items-baseline">
                 <h2 className="text-2xl font-bold">Campaign Progress</h2>
+         
+
+
+       
+                
                 <div className="text-right">
                   <div className="text-3xl font-bold text-primary">
                     ${currentAmount.toLocaleString()}
@@ -65,7 +74,9 @@ const Donate = () => {
                 <CardTitle className="text-2xl">Make Your Donation</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                {/* Quick Select Amounts */}
+                
+               
+                {/*  // Quick Select Amounts 
                 <div>
                   <Label className="text-base mb-3 block">Select Amount</Label>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -89,8 +100,14 @@ const Donate = () => {
                     })}
                   </div>
                 </div>
+                */}
+            
+               
+             
 
-                {/* Custom Amount */}
+
+            
+               {/*   // Custom Amount 
                 <div>
                   <Label htmlFor="custom-amount" className="text-base mb-2 block">
                     Or Enter Custom Amount
@@ -114,19 +131,24 @@ const Donate = () => {
                     </div>
                   </div>
                 </div>
+                */}
 
-                {/* Payment Integration Placeholder */}
+                
+                {/*// Payment Integration Placeholder */}
                 <div className="border-t pt-6">
-                  <p className="text-sm text-muted-foreground mb-4">
+                  {/*<p className="text-sm text-muted-foreground mb-4">
                     Payment processing powered by Stripe (industry standard)
-                  </p>
-                  <Button variant="hero" size="lg" className="w-full" disabled>
+                  </p>*/}
+                  <a href="https://www.gofundme.com/f/support-ru-bots-autonomous-food-delivery">
+                  <Button variant="hero" size="lg" className="w-full" >
+                    
                     <Heart className="mr-2" />
-                    Payment Integration - Coming Soon
+                    GoFundMe Link
                   </Button>
-                  <p className="text-xs text-center text-muted-foreground mt-3">
+                  </a>
+                  {/*<p className="text-xs text-center text-muted-foreground mt-3">
                     Stripe integration to be configured
-                  </p>
+                  </p>*/}
                 </div>
               </CardContent>
             </Card>
