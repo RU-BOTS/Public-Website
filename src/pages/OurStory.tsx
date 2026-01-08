@@ -19,6 +19,7 @@ import shubham_img from "@/assets/shubham_image.png";
 import ilan_img from "@/assets/ilan_image.png";
 import gav_img from "@/assets/gavril_image.png";
 import proto_img from "@/assets/prototypeDev_img.png";
+import taha_img from "@/assets/taha_img.png";
 
 const OurStory = () => {
   const donationGoal = 5000;
@@ -234,9 +235,15 @@ const OurStory = () => {
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
-                  <div className="w-20 h-20 rounded-full bg-yellow-500 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">TZ</span>
+                   <div className="">
+                    <img 
+                    
+                  src={taha_img} 
+                  alt="Community outreach event" 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
                   </div>
+                  
                   <CardTitle className="text-lg">Taha Zaidi </CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
                 </CardHeader>
