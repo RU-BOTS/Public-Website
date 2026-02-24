@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Heart, Users, Target, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-robot.jpg";
-import communityImage from "@/assets/community.webp";
+import communityImage from "@/assets/community_img.png";
 import accomplishment1 from "@/assets/market.webp";
 import accomplishment2 from "@/assets/prototype.webp";
 import accomplishment3 from "@/assets/community.webp";
