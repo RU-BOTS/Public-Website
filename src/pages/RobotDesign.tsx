@@ -69,7 +69,7 @@ const RobotDesign = () => {
                   </p>
                    <div className="canvas-container">
               <Canvas 
-              camera={{ position: [0, 0, 5] }}
+              camera={{ position: [0, 0, 100] }}
               style={{width: '500px', height: '500px'}}>
                 <ambientLight intensity={3} />
                 <directionalLight position={[5, 5, 5]} intensity={3} />
@@ -142,7 +142,6 @@ const RobotDesign = () => {
                                   { src:mdriver_img, altinstall: "Motor Driver Circuit", caption: "Motor Driver Circuit" },
                                   { src:chassis_img, alt: "Motor Driver Circuit", caption: "Chassis Design" },
 
-                                  { src:mdriver_img, alt: "Motor Driver Circuit", caption: "Motor Driver Circuit" },
                                   
                                   //{ src: accomplishment3, alt: "Community outreach event", caption: "Sharing our work with students" },
                                   //{ src: communityImage, alt: "Community impact", caption: "Partnering to improve food access" },
@@ -476,7 +475,7 @@ const RobotDesign = () => {
                 part numbers, supplier information, and technical drawings.
               </p>
               <div className="flex justify-center gap-4 flex-wrap">
-                <a href="/3D_Images/RU HART PantryBot v3.stl" download="Robot File" className="download-btn">
+                <a href="/3D_images/ruhart_frame.glb" download="Robot File" className="download-btn">
                 <Button variant="outline" size="lg" className="bg-background/10 hover:bg-background/20" >
                   <Download className="mr-2 h-4 w-4" />
                   Download CAD Files 
