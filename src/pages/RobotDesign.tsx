@@ -138,7 +138,7 @@ const RobotDesign = () => {
                             <Carousel className="relative">
                               <CarouselContent>
                                 {[
-                                  { src:mdriver_img, alt: "Motor Driver Circuit", caption: "Motor Driver Circuit" },
+                                  { src:mdriver_img, altinstall: "Motor Driver Circuit", caption: "Motor Driver Circuit" },
                                   { src:chassis_img, alt: "Motor Driver Circuit", caption: "Chassis Design" },
 
                                   
