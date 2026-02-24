@@ -12,6 +12,8 @@ import presentation_img from "@/assets/presentation_img.png";
 import pd_img from "@/assets/prototypeDev_img.png";
 import cm_img from "@/assets/community_img.png";
 import me_img from "@/assets/mechE_img.png";
+import partner_img from "@/assets/partnership_img.png";
+import store_img from "@/assets/store_img.jpg";
 
 const Home = () => {
   return (
@@ -104,7 +106,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img 
-                src={pizzaImg} 
+                src={store_img} 
                 alt="Community Impact" 
                 className="rounded-lg shadow-medium"
               />
@@ -159,6 +161,8 @@ const Home = () => {
                 vital services with innovative technology. Together, we're building a 
                 comprehensive solution to campus food insecurity.
               </p>
+
+              
               <div className="flex justify-center gap-4 flex-wrap">
                 <Link to="/about">
                   <Button variant="default">Learn About Our Partnership</Button>
@@ -167,8 +171,17 @@ const Home = () => {
                   <Button variant="outline">View Project Timeline</Button>
                 </Link>
               </div>
+
+              
             </CardContent>
           </Card>
+          <div className="relative flex justify-center gap-4 flex-wrap">
+              <img 
+                src={partner_img} 
+                alt="Community Impact" 
+                className="rounded-lg shadow-medium"
+              />
+            </div>
         </div>
       </section>
 

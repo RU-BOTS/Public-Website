@@ -14,6 +14,7 @@ import { Mesh } from "three";
 
 
 import mdriver_img from "@/assets/motorD_circuit.jpg";
+import chassis_img from "@/assets/prototype.webp";
 
 
 
@@ -27,7 +28,7 @@ const RobotDesign = () => {
 
     scene.traverse((child) => {
     if (child.isMesh && child) {
-      child.material.color.set('red') // or new THREE.Color('#ff0000')
+      child.material.color.set('gray') // or new THREE.Color('#ff0000')
     }
     })
 
@@ -71,7 +72,7 @@ const RobotDesign = () => {
               style={{width: '500px', height: '500px'}}>
                 <ambientLight intensity={3} />
                 <directionalLight position={[5, 5, 5]} intensity={3} />
-                <BotModel url="/3D_Images/bot3.gltf" />
+                <BotModel url="/3D_images/ruhart_frame.glb" />
                 <OrbitControls 
 
                 maxPolarAngle={Math.PI / 2}/>
@@ -138,6 +139,8 @@ const RobotDesign = () => {
                               <CarouselContent>
                                 {[
                                   { src:mdriver_img, alt: "Motor Driver Circuit", caption: "Motor Driver Circuit" },
+                                  { src:chassis_img, alt: "Motor Driver Circuit", caption: "Chassis Design" },
+
                                   
                                   //{ src: accomplishment3, alt: "Community outreach event", caption: "Sharing our work with students" },
                                   //{ src: communityImage, alt: "Community impact", caption: "Partnering to improve food access" },
