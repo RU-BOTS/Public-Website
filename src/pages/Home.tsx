@@ -57,25 +57,25 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
-                <p className="text-muted-foreground">Students Affected</p>
+                <div className="text-4xl font-bold text-primary mb-2">156</div>
+                <p className="text-muted-foreground">Users Surveyed</p>
               </CardContent>
             </Card>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
-                <p className="text-muted-foreground">Deliveries Made</p>
+                <div className="text-4xl font-bold text-primary mb-2">250+</div>
+                <p className="text-muted-foreground">Students in Discord</p>
               </CardContent>
             </Card>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
-                <p className="text-muted-foreground">Hours Saved</p>
+                <div className="text-4xl font-bold text-primary mb-2">4</div>
+                <p className="text-muted-foreground">Community Events</p>
               </CardContent>
             </Card>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
-                <div className="text-4xl font-bold text-primary mb-2">[TBD]</div>
+                <div className="text-4xl font-bold text-primary mb-2">3</div>
                 <p className="text-muted-foreground">Partner Organizations</p>
               </CardContent>
             </Card>
