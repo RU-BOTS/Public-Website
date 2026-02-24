@@ -265,7 +265,7 @@ const Home = () => {
               <CardContent className="pt-6">
                 <h3 className="text-2xl font-bold mb-3 text-primary">Community Engagement</h3>
                 <p className="text-muted-foreground mb-4">
-                  [2025 Fall] - Hosted 10+ workshops and across mechanical, business,electrical and software subteams, educating members on specialized robotics topics. Presented our work at the Rutgers Engineering Expo (ID3A)
+                  [2026 Spring] - Hosted 10+ workshops and across mechanical, business,electrical and software subteams, educating members on specialized robotics topics. Presented our work at the Rutgers Engineering Expo (ID3A)
                   
         
                 </p>
