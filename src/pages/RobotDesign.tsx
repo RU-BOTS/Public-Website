@@ -19,6 +19,7 @@ import chassis_img from "@/assets/prototype.webp";
 
 
 
+
 const RobotDesign = () => {
 
 
@@ -141,6 +142,7 @@ const RobotDesign = () => {
                                   { src:mdriver_img, altinstall: "Motor Driver Circuit", caption: "Motor Driver Circuit" },
                                   { src:chassis_img, alt: "Motor Driver Circuit", caption: "Chassis Design" },
 
+                 
                                   
                                   //{ src: accomplishment3, alt: "Community outreach event", caption: "Sharing our work with students" },
                                   //{ src: communityImage, alt: "Community impact", caption: "Partnering to improve food access" },
