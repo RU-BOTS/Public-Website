@@ -271,7 +271,7 @@ const Home = () => {
                 </p>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <div className="h-1 w-12 bg-primary rounded"></div>
-                  <span> [80+] Rutgers students actively volunteer</span>
+                  <span> [30+] Rutgers students actively volunteer</span>
                 </div>
               </CardContent>
             </Card>
