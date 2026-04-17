@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Heart, Mail, MapPin } from "lucide-react";
+import ruhart_img from "@/assets/ruhart_image.png";
+
 
 const Footer = () => {
   return (
@@ -8,8 +10,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2 font-bold text-xl">
-              <Heart className="h-6 w-6 text-primary" />
-              <span>RU HART</span>
+          <img
+            src={ruhart_img}
+            alt="RU HART Logo"
+            className="h-20 w-20 object-contain"
+          />
+
             </div>
             <p className="text-sm text-muted-foreground">
               Helping Autonomous Robotics Technology combat food insecurity in our community.

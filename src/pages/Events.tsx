@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Gift, Download, Trophy } from "lucide-react";
+import ClubCalendar from "@/components/ui/eventCalendar";
+
 
 const Events = () => {
   return (
@@ -22,13 +24,16 @@ const Events = () => {
           <Card className="shadow-medium">
             <CardContent className="pt-8 pb-8 text-center">
               <Calendar className="h-16 w-16 mx-auto mb-4 text-muted-foreground" />
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-muted-foreground mb-6">
                 Event calendar coming soon! Check back here for upcoming fundraisers, 
                 demonstrations, and community events.
               </p>
-              <div className="inline-block bg-muted/50 rounded-lg p-8 border-2 border-dashed border-border max-w-md">
+              <div className="inline-block bg-muted/50 rounded-lg p-8 border-2 border-dashed border-border">
                 <p className="text-sm font-semibold text-muted-foreground mb-2">
-                  [Event Calendar Integration]
+                    <div>
+                      <h1 className="text-3xl font-bold mb-6">Club Events</h1>
+                      <ClubCalendar />
+                    </div>
                 </p>
                 <p className="text-xs text-muted-foreground">
                   Downloadable e-calendar invites for future dates to be added

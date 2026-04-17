@@ -20,6 +20,10 @@ import ilan_img from "@/assets/ilan_image.png";
 import gav_img from "@/assets/gavril_image.png";
 import proto_img from "@/assets/prototypeDev_img.png";
 import taha_img from "@/assets/taha_img.png";
+import nabilah_img from "@/assets/nabilah_image.png"
+import aryan_img from "@/assets/aryan_image.png"
+import adam_img from "@/assets/adam_image.png"
+import Reveal from "@/components/ui/Reveal";
 
 const OurStory = () => {
   const donationGoal = 5000;
@@ -31,9 +35,11 @@ const OurStory = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-5xl font-bold mb-6">Our Story</h1>
+          <Reveal>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             The journey of RU HART and our mission to combat food insecurity
           </p>
+          </Reveal>
         </div>
 
         {/* Founding Story */}
@@ -45,16 +51,17 @@ const OurStory = () => {
                 It all started with a simple question: What if technology could make kindness move on wheels?
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                During their time at Rutgers, Dhruv and Advik noticed something that too often went unseen — students quietly struggling with food insecurity. 
-                Between classes, jobs, and commutes, many found it difficult to access the Rutgers Food Pantry during open hours, and even when they did, they often felt self-conscious about seeking help. 
-                The founders envisioned a way to bring the pantry to them — safely, reliably, and with discretion.
+                  During their time at Rutgers, Dhruv and Advik noticed something that too often went unseen: students quietly struggling with food insecurity. 
+                  Between classes, jobs, and commutes, many found it difficult to access the Rutgers Food Pantry during open hours, and even when they did, they often felt self-conscious about seeking help. 
+                  The founders envisioned a way to bring the pantry to them in a way that is safe, reliable, and discreet.
+
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                From that spark, RU HART, Rutgers’ chapter of the Human Factors and Ergonomics Society (HFES), was born — a team of engineers, designers, and dreamers determined to use robotics for good. 
+                From that spark, RU HART, Rutgers’ chapter of the Human Factors and Ergonomics Society (HFES), was born: a team of engineers, designers, and dreamers determined to use robotics for good. 
                 Together, they began building PantryBot, an autonomous delivery robot designed to carry pantry essentials directly to students across campus.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                What began as late-night brainstorming sessions soon became a mission: to prove that technology doesn’t just have to be smart — it can be compassionate.
+                What began as late-night brainstorming sessions soon became a mission: to prove that technology doesn’t just have to be smart, rather it can be compassionate.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Today, RU HART brings together students from various disciplines including engineering, business, law and software, united by a 
@@ -68,18 +75,24 @@ const OurStory = () => {
         {/* Board Hierarchy */}
         <section>
           <div className="text-center mb-12">
+            <Reveal>
             <h2 className="text-4xl font-bold mb-4 flex items-center justify-center gap-3">
               <Users className="h-10 w-10 text-primary" />
               Leadership Team
             </h2>
+            </Reveal>
+            <Reveal>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Meet the dedicated team driving RU HART's mission forward
             </p>
+            </Reveal>
           </div>
 
           {/* Executive Board */}
           <div className="mb-12">
+            <Reveal>
             <h3 className="text-2xl font-bold mb-6 text-center">Executive Board</h3>
+            </Reveal>
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
@@ -91,31 +104,27 @@ const OurStory = () => {
                   className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
                 />
                   </div>
-                  <CardTitle className="text-xl">Dhruv Nagpal</CardTitle>
+                  <Reveal>
+                  <CardTitle className="text-xl">
+                  <a     
+                  href=" https://www.linkedin.com/in/dhruv-nagpal15"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline hover:text-blue-600 transition-colors">
+                    Dhruv Nagpal
+                  </a>
+                  </CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">President</p>
+                  </Reveal>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
+                  <Reveal>
                   <p>Industrial and Systems Engineering, Class of 2028</p>
+                  </Reveal>
                 </CardContent>
+                
               </Card>
 
-              <Card className="shadow-soft hover:shadow-medium transition-shadow">
-                <CardHeader className="text-center pb-4">
-                  <div className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center">
-                    <img 
-                    
-                  src={advik_img} 
-                  alt="Community outreach event" 
-                  className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
-                />
-                  </div>
-                  <CardTitle className="text-xl">Advik Lall</CardTitle>
-                  <p className="text-sm text-muted-foreground font-medium">Vice President</p>
-                </CardHeader>
-                <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Computer Science and Data Science, Class of 2027</p>
-                </CardContent>
-              </Card>
 
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
@@ -127,19 +136,65 @@ const OurStory = () => {
                   className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
                 />
                   </div>
-                  <CardTitle className="text-xl">Kajol Parikh</CardTitle>
-                  <p className="text-sm text-muted-foreground font-medium">Secretary</p>
+                  <Reveal>
+                  <CardTitle className="text-xl">
+                    <a
+                    href="https://www.linkedin.com/in/kajol-parikh-1ab3533a2/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-blue-600 transition-colors">
+                      Kajol Parikh
+                    </a>
+                  </CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Vice President</p>
+                  </Reveal>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
+                  <Reveal>
                   <p>Computer Science and Data Science, Class of 2028</p>
+                  </Reveal>
                 </CardContent>
               </Card>
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center">
+                    <img 
+                    
+                  src={aryan_img} 
+                  alt="Community outreach event" 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
+                  </div>
+                  <Reveal>
+                  <CardTitle className="text-xl">
+                    <a
+                    href=" https://www.linkedin.com/in/aryan-balwani/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-blue-600 transition-colors">
+                    Aryan Balwani  
+                    </a>
+                  </CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Secretary</p>
+                  </Reveal>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <Reveal>
+                  <p>Finance, Class of 2028</p>
+                  </Reveal>
+                </CardContent>
+              </Card>
+
+              
             </div>
           </div>
 
           {/* Team Leads */}
           <div className="mb-12">
+            <Reveal>
             <h3 className="text-2xl font-bold mb-6 text-center">Team Leads</h3>
+            </Reveal>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
               <Card className="shadow-soft hover:shadow-medium transition-shadow">
                 <CardHeader className="text-center pb-4">
@@ -151,11 +206,53 @@ const OurStory = () => {
                   className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
                 />
                   </div>
-                  <CardTitle className="text-lg">Illan Zarge</CardTitle>
+                  <Reveal>
+                  <CardTitle className="text-lg">
+                    <a 
+                    href="https://www.linkedin.com/in/ilanzarge/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-blue-600 transition-colors">
+                    Illan Zarge
+                    </a>
+                  </CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Mechanical Lead</p>
+                  </Reveal>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
+                  <Reveal>
                   <p>Industrial and Systems Engineering, Class of 2028</p>
+                  </Reveal>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="">
+                    <img 
+                    
+                  src={adam_img} 
+                  alt="Community outreach event" 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
+                  </div>
+                  <Reveal>
+                  <CardTitle className="text-lg">
+                    <a 
+                    href="https://www.linkedin.com/in/adam-butt-cswa-737712283/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-blue-600 transition-colors">
+                    Adam Butt
+                    </a>
+                  </CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Mechanical Lead</p>
+                  </Reveal>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <Reveal>
+                  <p>Packaging Engineering, Class of 2029</p>
+                  </Reveal>
                 </CardContent>
               </Card>
 
@@ -169,11 +266,123 @@ const OurStory = () => {
                   className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
                 />
                   </div>
-                  <CardTitle className="text-lg">Rohan Shrivastava</CardTitle>
+                  <Reveal>
+                  <CardTitle className="text-lg">
+                    <a
+                    href="https://www.linkedin.com/in/rohan-shrivastava456/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-blue-600 transition-colors">
+                      Rohan Shrivastava
+                    </a>
+                  </CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
+                  </Reveal>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
+                  <Reveal>
                   <p>Electrical Engineering, Class of 2028</p>
+                  </Reveal>
+                </CardContent>
+              </Card>
+
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                   <div className="">
+                    <img 
+                    
+                  src={taha_img} 
+                  alt="Community outreach event" 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
+                  </div>
+                  <Reveal>
+                  <CardTitle className="text-lg">
+                    <a
+                    href="https://www.linkedin.com/in/taha-zaidi-10390731b/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-blue-600 transition-colors"
+                    >
+                    Taha Zaidi
+                    </a>
+                  </CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
+                  </Reveal>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <Reveal>
+                  <p>Electrical Engineering, Class of 2028</p>
+                  </Reveal>
+                </CardContent>
+              </Card>
+
+
+
+
+            </div>
+            {/* Second Team Leads */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="">
+                    <img 
+                    
+                  src={nabilah_img} 
+                  alt="Community outreach event" 
+                  className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
+                  </div>
+                  <Reveal>
+                  <CardTitle className="text-lg">     
+                    <a
+                    href="https://www.linkedin.com/in/nabilah-nisar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-blue-600 transition-colors">
+                      Nabilah Nisar
+                    </a>
+                  </CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Buisness Operations Lead</p>
+                  </Reveal>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <Reveal>
+                  <p>Electrical Engineering, Class of 2029</p>
+                  </Reveal>
+                </CardContent>
+              </Card>
+
+              
+
+              <Card className="shadow-soft hover:shadow-medium transition-shadow">
+                <CardHeader className="text-center pb-4">
+                  <div className="">
+                    <img 
+                    
+                  src={gav_img} 
+                  alt="Community outreach event" 
+                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
+                />
+                  </div>
+                  <Reveal>
+                  <CardTitle className="text-lg">
+                    <a
+                    href="https://www.linkedin.com/in/gavril-lomotey-a28a67354/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-blue-600 transition-colors">
+                      Gavril Lomotey
+                    </a>
+                  </CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
+                  </Reveal>
+                </CardHeader>
+                <CardContent className="text-center text-sm text-muted-foreground">
+                  <Reveal>
+                  <p>Electrical Engineering, Class of 2028</p>
+                  </Reveal>
                 </CardContent>
               </Card>
 
@@ -187,86 +396,15 @@ const OurStory = () => {
                   className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
                 />
                   </div>
+                  <Reveal>
                   <CardTitle className="text-lg">Apollo Touch</CardTitle>
                   <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
+                  </Reveal>
                 </CardHeader>
                 <CardContent className="text-center text-sm text-muted-foreground">
+                  <Reveal>
                   <p>Computer Science, Class of 2029</p>
-                </CardContent>
-              </Card>
-
-              <Card className="shadow-soft hover:shadow-medium transition-shadow">
-                <CardHeader className="text-center pb-4">
-                  <div className="">
-                    <img 
-                    
-                  src={shubham_img} 
-                  alt="Community outreach event" 
-                  className="= object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
-                />
-                  </div>
-                  <CardTitle className="text-lg">Shubham Agarwal</CardTitle>
-                  <p className="text-sm text-muted-foreground font-medium">Business Lead</p>
-                </CardHeader>
-                <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Aerospace Engineering, Class of 2029</p>
-                </CardContent>
-              </Card>
-            </div>
-            {/* Second Team Leads */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-              <Card className="shadow-soft hover:shadow-medium transition-shadow">
-                <CardHeader className="text-center pb-4">
-                  <div className="">
-                    <img 
-                    
-                  src={bridget_img} 
-                  alt="Community outreach event" 
-                  className="w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
-                />
-                  </div>
-                  <CardTitle className="text-lg">Bridget Filan</CardTitle>
-                  <p className="text-sm text-muted-foreground font-medium">Marketing Lead</p>
-                </CardHeader>
-                <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Industrial and Systems Engineering, Class of 2028</p>
-                </CardContent>
-              </Card>
-
-              <Card className="shadow-soft hover:shadow-medium transition-shadow">
-                <CardHeader className="text-center pb-4">
-                   <div className="">
-                    <img 
-                    
-                  src={taha_img} 
-                  alt="Community outreach event" 
-                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
-                />
-                  </div>
-                  
-                  <CardTitle className="text-lg">Taha Zaidi </CardTitle>
-                  <p className="text-sm text-muted-foreground font-medium">Electrical Lead</p>
-                </CardHeader>
-                <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Electrical Engineering, Class of 2028</p>
-                </CardContent>
-              </Card>
-
-              <Card className="shadow-soft hover:shadow-medium transition-shadow">
-                <CardHeader className="text-center pb-4">
-                  <div className="">
-                    <img 
-                    
-                  src={gav_img} 
-                  alt="Community outreach event" 
-                  className="object-cover w-24 h-24 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center"
-                />
-                  </div>
-                  <CardTitle className="text-lg">Gavril Lomotey</CardTitle>
-                  <p className="text-sm text-muted-foreground font-medium">Software Lead</p>
-                </CardHeader>
-                <CardContent className="text-center text-sm text-muted-foreground">
-                  <p>Electrical Engineering, Class of 2028</p>
+                  </Reveal>
                 </CardContent>
               </Card>
 
@@ -278,10 +416,12 @@ const OurStory = () => {
           }
           <section className="mt-16">
             <div className="text-center mb-8">
+              <Reveal>
               <h3 className="text-3xl font-bold">Team Progress</h3>
               <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
                 A glimpse into our journey building PantryBot — prototyping, testing, and community outreach
               </p>
+              </Reveal>
             </div>
             <Card className="shadow-medium">
               <CardContent className="pt-6 pb-8">
@@ -318,10 +458,13 @@ const OurStory = () => {
           {/* Support Our Mission - Distinct Donation CTAs */}
           <section className="mt-16">
             <div className="text-center mb-8">
+              <Reveal>
               <h3 className="text-3xl font-bold">Support Our Mission</h3>
               <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
                 Your gift fuels engineering, outreach, and the delivery of dignity on campus
               </p>
+              </Reveal>
+              
             </div>
 
             <div className="space-y-8">
@@ -330,12 +473,16 @@ const OurStory = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 blur-xl" />
                 <div className="absolute inset-0 rounded-xl pointer-events-none border border-primary/30" />
                 <CardContent className="relative z-10 p-8 text-center">
+                  <Reveal>
                   <div className="text-2xl md:text-3xl font-bold mb-3">Help PantryBot reach more students</div>
                   <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">Every contribution powers parts, testing, and safe delivery pilots</p>
+                  </Reveal>
                   <Link to="/donate">
+                  <Reveal>
                     <Button size="lg" className="px-8 text-lg shadow-md hover:shadow-primary/40">
                       <Heart className="h-5 w-5 mr-2" /> Donate Now
                     </Button>
+                  </Reveal>
                   </Link>
                 </CardContent>
               </Card>

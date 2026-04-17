@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Cpu, Clock, Shield, Package } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import Reveal from "../components/ui/Reveal";
 
 function useAnimatedNumber(target: number, duration = 1000) {
   const [value, setValue] = useState(0);
@@ -147,62 +148,77 @@ const About = () => {
       <div className="container">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
+          <Reveal>
           <h1 className="text-5xl font-bold mb-6">About RU HART</h1>
+          
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Helping Autonomous Robotics Technology - Innovation meets compassion 
             to address food insecurity at Rutgers University
           </p>
+          </Reveal>
         </div>
 
         {/* What We Do */}
         <section className="mb-20">
+          <Reveal>
           <h2 className="text-3xl font-bold mb-8">What We Do</h2>
+          </Reveal>
           <Card className="shadow-medium">
             <CardContent className="pt-6">
+              <Reveal>
               <p className="text-lg text-muted-foreground mb-6">
                 RU HART is developing autonomous delivery robots to bring food assistance 
                 directly to students experiencing food insecurity. Our solution addresses 
                 critical gaps in existing food pantry services by providing:
               </p>
+              </Reveal>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="flex gap-4">
                   <Shield className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
+                    <Reveal>
                     <h3 className="font-semibold mb-2">Complete Discretion</h3>
                     <p className="text-muted-foreground">
                       Automated delivery protects student privacy and removes the stigma 
                       often associated with seeking food assistance
                     </p>
+                    </Reveal>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <Clock className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
+                    <Reveal>
                     <h3 className="font-semibold mb-2">Flexible Scheduling</h3>
                     <p className="text-muted-foreground">
                       24/7 delivery capability accommodates students with challenging 
                       work schedules or class conflicts
                     </p>
+                    </Reveal>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <Cpu className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
+                    <Reveal>
                     <h3 className="font-semibold mb-2">Accessibility Services</h3>
                     <p className="text-muted-foreground">
                       Direct-to-location delivery assists students with mobility challenges 
                       or disabilities
                     </p>
+                    </Reveal>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <Package className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
+                    <Reveal>
                     <h3 className="font-semibold mb-2">Perishable Items</h3>
                     <p className="text-muted-foreground">
                       Temperature-controlled compartments enable safe delivery of fresh 
                       produce and perishable goods
                     </p>
+                    </Reveal>
                   </div>
                 </div>
               </div>
@@ -212,16 +228,21 @@ const About = () => {
 
         {/* Partnership Section */}
         <section className="mb-20">
+          <Reveal>
           <h2 className="text-3xl font-bold mb-8">Our Partnership</h2>
+          </Reveal>
           <Card className="shadow-medium bg-gradient-warm border-0">
             <CardContent className="pt-6">
               <div className="prose prose-lg max-w-none">
+                <Reveal>
                 <p className="text-muted-foreground">
+                  
                   RU HART proudly partners with the <strong>Rutgers Food Pantry</strong>, enhancing 
                   rather than replacing their essential services. While the food pantry provides 
                   an invaluable resource through their physical location and truck delivery program, 
                   RU HART's autonomous robots complement these efforts by solving specific challenges:
                 </p>
+                </Reveal>
                 <ul className="space-y-3 text-muted-foreground mt-4">
                   <li>
                     Extending service hours beyond traditional pantry operating times
@@ -239,10 +260,12 @@ const About = () => {
                     Offering a fully private option for students concerned about visibility
                   </li>
                 </ul>
+                <Reveal>
                 <p className="text-muted-foreground mt-4">
                   Together, we're building a comprehensive food security network that serves 
                   all students, regardless of their unique circumstances or challenges.
                 </p>
+                </Reveal>
               </div>
             </CardContent>
           </Card>
@@ -250,26 +273,34 @@ const About = () => {
 
         {/* Impact / Stats Graphics - Composite Impact Panel */}
         <section className="mb-20">
+          <Reveal>
           <h2 className="text-3xl font-bold mb-8">Impact at a Glance</h2>
+          </Reveal>
           <ImpactPanel />
         </section>
 
         {/* How It Works */}
         <section className="mb-20">
+          <Reveal>
           <h2 className="text-3xl font-bold mb-8">How It Works</h2>
+          </Reveal>
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="shadow-soft">
               <CardHeader>
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-primary">1</span>
                 </div>
+                <Reveal>
                 <CardTitle>Request Delivery</CardTitle>
+                </Reveal>
               </CardHeader>
               <CardContent>
+                <Reveal>
                 <p className="text-muted-foreground">
                   Students submit a confidential request through our secure platform, 
                   specifying their location and dietary needs
                 </p>
+                </Reveal>
               </CardContent>
             </Card>
 
@@ -278,13 +309,17 @@ const About = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-primary">2</span>
                 </div>
+                <Reveal>
                 <CardTitle>Autonomous Navigation</CardTitle>
+                </Reveal>
               </CardHeader>
               <CardContent>
+                <Reveal>
                 <p className="text-muted-foreground">
                   Our robot autonomously navigates campus pathways, avoiding obstacles 
                   and optimizing routes for efficient delivery
                 </p>
+                </Reveal>
               </CardContent>
             </Card>
 
@@ -293,13 +328,17 @@ const About = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-primary">3</span>
                 </div>
+                <Reveal>
                 <CardTitle>Secure Receipt</CardTitle>
+                </Reveal>
               </CardHeader>
               <CardContent>
+                <Reveal>
                 <p className="text-muted-foreground">
                   Students receive a notification upon arrival and securely retrieve 
                   their items from the robot's compartment
                 </p>
+                </Reveal>
               </CardContent>
             </Card>
           </div>
@@ -309,11 +348,14 @@ const About = () => {
         <section className="text-center">
           <Card className="shadow-medium bg-gradient-navy border-0">
             <CardContent className="pt-8 pb-8 text-secondary-foreground">
+              <Reveal>
               <h2 className="text-3xl font-bold mb-4">Join Our Mission</h2>
+              
               <p className="text-lg mb-6 opacity-90 max-w-2xl mx-auto">
                 Whether through donations, joining our team, or spreading awareness, 
                 you can help make a difference in the lives of students facing food insecurity
               </p>
+              </Reveal>
               <div className="flex gap-4 justify-center flex-wrap">
                 <Link to="/donate">
                   <Button variant="accent" size="lg">Support Us</Button>

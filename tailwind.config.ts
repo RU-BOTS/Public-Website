@@ -120,6 +120,7 @@ export default {
         "slide-up": "slide-up 0.6s ease-out",
         "scale-in": "scale-in 0.4s ease-out",
       },
+
     },
   },
   plugins: [require("tailwindcss-animate")],

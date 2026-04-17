@@ -14,6 +14,8 @@ import cm_img from "@/assets/community_img.png";
 import me_img from "@/assets/mechE_img.png";
 import partner_img from "@/assets/partnership_img.png";
 import store_img from "@/assets/store_img.jpg";
+import {motion} from "framer-motion";
+import Reveal from "../components/ui/Reveal";
 
 const Home = () => {
   return (
@@ -29,26 +31,51 @@ const Home = () => {
           }}
         />
         <div className="container relative z-10 text-center text-primary-foreground py-20 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
+          <motion.h1 
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
             Fighting Food Insecurity
-            <span className="block mt-2 text-accent">Through Innovation</span>
-          </h1>
+            <span className="block mt-2 text-accent">
+              Through Innovation
+            </span>
+          </motion.h1>
+
+          <Reveal>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-95">
             RU HART uses autonomous robotics to deliver food assistance with dignity, 
             discretion, and efficiency to those who need it most.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
+          </Reveal>
+          <div className="flex flex-wrap justify-center gap-4 mt-6">
+          <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+          >
             <Link to="/donate">
               <Button variant="accent" size="lg" className="text-lg px-8 animate-scale-in">
                 <Heart className="mr-2 h-5 w-5" />
                 Support Our Mission
               </Button>
             </Link>
+          </motion.div>
+
+          <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+          >
             <Link to="/about">
-              <Button variant="outline" size="lg" className="text-lg px-8 bg-background/90 hover:bg-background animate-scale-in">
+              <Button variant="outline" 
+                size="lg" 
+                className="text-lg px-8 text-accent-foreground bg-background/90 hover:bg-background animate-scale-in">
                 Learn More
               </Button>
             </Link>
+
+          </motion.div>
           </div>
         </div>
       </section>
@@ -57,30 +84,40 @@ const Home = () => {
       <section className="py-16 bg-gradient-warm">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <Reveal>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
                 <div className="text-4xl font-bold text-primary mb-2">156</div>
                 <p className="text-muted-foreground">Users Surveyed</p>
               </CardContent>
             </Card>
+            </Reveal>
+            <Reveal>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
                 <div className="text-4xl font-bold text-primary mb-2">250+</div>
                 <p className="text-muted-foreground">Students in Discord</p>
               </CardContent>
             </Card>
+            </Reveal>
+            <Reveal>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
                 <div className="text-4xl font-bold text-primary mb-2">4</div>
                 <p className="text-muted-foreground">Community Events</p>
               </CardContent>
             </Card>
+            </Reveal>
+            <Reveal>
             <Card className="text-center shadow-soft hover:shadow-medium transition-all">
               <CardContent className="pt-6">
                 <div className="text-4xl font-bold text-primary mb-2">3</div>
                 <p className="text-muted-foreground">Partner Organizations</p>
               </CardContent>
             </Card>
+            </Reveal>
+            
+            
           </div>
         </div>
       </section>
@@ -90,17 +127,31 @@ const Home = () => {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
+              <Reveal> 
               <h2 className="text-4xl font-bold">The Challenge We're Solving</h2>
+              </Reveal>
               <div className="prose prose-lg">
+                <Reveal>
                 <p className="text-muted-foreground">
                   Food insecurity affects countless students on campus, creating barriers to 
                   academic success and wellbeing. Traditional food assistance programs face challenges:
                 </p>
-                <ul className="space-y-2 text-muted-foreground">
+                </Reveal>
+                <ul className="mt-4 space-y-2 text-muted-foreground">
+                  <Reveal>
+                  
                   <li><strong>Limited discretion:</strong> Students fear stigma when accessing help</li>
+                  </Reveal>
+                  <Reveal>
                   <li><strong>Schedule conflicts:</strong> Many can't reach pantry during operating hours</li>
+                  </Reveal>
+                  <Reveal>
                   <li><strong>Accessibility issues:</strong> Physical barriers prevent some from accessing services</li>
+                  </Reveal>
+                  <Reveal>
                   <li><strong>Perishable items:</strong> Current systems struggle with fresh food delivery</li>
+                  </Reveal>
+                  
                 </ul>
               </div>
             </div>
@@ -118,33 +169,49 @@ const Home = () => {
       {/* Mission Statement */}
       <section className="py-20 bg-gradient-navy text-secondary-foreground">
         <div className="container text-center">
+          <Reveal>
           <h2 className="text-4xl font-bold mb-8">Our Mission</h2>
+          </Reveal>
+          <Reveal>
           <p className="text-xl max-w-3xl mx-auto mb-12 opacity-90">
             RU HART develops autonomous delivery robots that bring food assistance directly 
             to students in need, preserving dignity while solving logistical challenges that 
             traditional pantries cannot address.
           </p>
+          </Reveal>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="space-y-4">
               <Target className="h-12 w-12 mx-auto text-accent" />
+              <Reveal>
               <h3 className="text-xl font-semibold">Discretion First</h3>
+              </Reveal>
+              <Reveal>
               <p className="opacity-90">
                 Private, automated delivery removes stigma and preserves student dignity
               </p>
+              </Reveal>
             </div>
             <div className="space-y-4">
               <Users className="h-12 w-12 mx-auto text-accent" />
+              <Reveal>
               <h3 className="text-xl font-semibold">Accessibility</h3>
+              </Reveal>
+              <Reveal>
               <p className="opacity-90">
                 24/7 service for students with disabilities or schedule conflicts
               </p>
+              </Reveal>
             </div>
             <div className="space-y-4">
               <TrendingUp className="h-12 w-12 mx-auto text-accent" />
+              <Reveal>
               <h3 className="text-xl font-semibold">Fresh Food</h3>
+              </Reveal>
+              <Reveal>
               <p className="opacity-90">
                 Reliable perishable item delivery that complements existing services
               </p>
+              </Reveal>
             </div>
           </div>
         </div>
@@ -155,20 +222,28 @@ const Home = () => {
         <div className="container text-center">
           <Card className="max-w-4xl mx-auto shadow-medium">
             <CardContent className="pt-8 pb-8">
+              <Reveal>
               <h2 className="text-3xl font-bold mb-4">Partnering for Impact</h2>
+              </Reveal>
+              <Reveal>
               <p className="text-lg text-muted-foreground mb-6">
                 RU HART works hand-in-hand with the Rutgers Food Pantry, enhancing their 
                 vital services with innovative technology. Together, we're building a 
                 comprehensive solution to campus food insecurity.
               </p>
+              </Reveal>
 
               
               <div className="flex justify-center gap-4 flex-wrap">
                 <Link to="/about">
+                <Reveal>
                   <Button variant="default">Learn About Our Partnership</Button>
+                </Reveal>
                 </Link>
                 <Link to="/timeline">
+                <Reveal>
                   <Button variant="outline">View Project Timeline</Button>
+                </Reveal>
                 </Link>
               </div>
 
@@ -188,10 +263,14 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-hero text-primary-foreground">
         <div className="container text-center">
+          <Reveal>
           <h2 className="text-4xl font-bold mb-4">Be Part of the Solution</h2>
+          </Reveal>
+          <Reveal>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-95">
             Your support helps us develop life-changing technology for students in need
           </p>
+          </Reveal>
           <Link to="/donate">
             <Button variant="accent" size="lg" className="text-lg px-12">
               Donate Today
@@ -204,11 +283,15 @@ const Home = () => {
       <section className="py-20 bg-background">
         <div className="container">
           <div className="text-center mb-12">
+            <Reveal>
             <h2 className="text-4xl font-bold mb-4">Our Journey So Far</h2>
+            </Reveal>
+            <Reveal>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               From concept to reality, see the milestones we've achieved in our mission 
               to revolutionize food assistance delivery
             </p>
+            </Reveal>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -221,13 +304,19 @@ const Home = () => {
                 />
               </div>
               <CardContent className="pt-6">
+                <Reveal>
                 <h3 className="text-2xl font-bold mb-3 text-primary">Market Research</h3>
+                </Reveal>
+                <Reveal>
                 <p className="text-muted-foreground mb-4">
-                  [2025 Summer] Identified business potential and conducted market research to develop a product that meets the needs of the Rutgers community. Chartered with HFES and ISE to get access to development resources and support.
+                  [2025 Summer] Identified business potential to develop a product that meets the needs of the Rutgers community. Chartered with HFES and ISE to get access to development resources and support.
                 </p>
+                </Reveal>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <div className="h-1 w-12 bg-primary rounded"></div>
+                  <Reveal>
                   <span>[156] Pantry users surveyed</span>
+                  </Reveal>
                 </div>
               </CardContent>
             </Card>
@@ -241,15 +330,21 @@ const Home = () => {
                 />
               </div>
               <CardContent className="pt-6">
+                <Reveal>
                 <h3 className="text-2xl font-bold mb-3 text-primary">Prototype Development</h3>
+                </Reveal>
+                <Reveal>
                 <p className="text-muted-foreground mb-4">
                   [2025 Fall] - Our dedicated team of engineers and volunteers successfully 
                   developed and tested our first autonomous delivery robot prototype with a drivetrain, 
                   marking a major milestone in our mission.
                 </p>
+                </Reveal>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <div className="h-1 w-12 bg-primary rounded"></div>
+                  <Reveal>
                   <span>[100+] hours of development</span>
+                  </Reveal>
                 </div>
               </CardContent>
             </Card>
@@ -263,15 +358,19 @@ const Home = () => {
                 />
               </div>
               <CardContent className="pt-6">
+                <Reveal>
                 <h3 className="text-2xl font-bold mb-3 text-primary">Community Engagement</h3>
+                </Reveal>
+                <Reveal>
                 <p className="text-muted-foreground mb-4">
                   [2026 Spring] - Hosted 10+ workshops and across mechanical, business,electrical and software subteams, educating members on specialized robotics topics. Presented our work at the Rutgers Engineering Expo (ID3A)
-                  
-        
                 </p>
+                </Reveal>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <div className="h-1 w-12 bg-primary rounded"></div>
+                  <Reveal>
                   <span> [30+] Rutgers students actively volunteer</span>
+                  </Reveal>
                 </div>
               </CardContent>
             </Card>

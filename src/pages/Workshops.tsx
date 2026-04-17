@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Cpu, Wrench, Code, Zap } from "lucide-react";
+import WorkshopCalendar from "@/components/ui/WorkshopCalendar";
 
 const Workshops = () => {
   const subteams = [
@@ -151,19 +152,21 @@ const Workshops = () => {
 
         {/* Workshop Schedule Placeholder */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Workshop Schedule</h2>
+          <h2 className="text-3xl font-bold mb-8">Subteam Schedule</h2>
           <Card className="shadow-medium">
             <CardContent className="pt-8 pb-8 text-center">
               <p className="text-muted-foreground mb-6">
-                Detailed workshop schedule and calendar to be posted. Check back soon 
+                Detailed subteam schedule and workshop calendar to be posted. Check back soon 
                 for dates, times, and locations for each subteam's sessions.
               </p>
               <div className="inline-block bg-muted/50 rounded-lg p-8 border-2 border-dashed border-border">
                 <p className="text-sm font-semibold text-muted-foreground">
-                  [Workshop Calendar Integration]
                 </p>
                 <p className="text-xs text-muted-foreground mt-2">
-                  Schedule to be populated
+                    <div>
+                      <h1 className="text-3xl font-bold mb-6">Subteam Meetings</h1>
+                      <WorkshopCalendar />
+                    </div>
                 </p>
               </div>
             </CardContent>
